@@ -12,7 +12,7 @@ public:
 	void UsePIDOutput(double output);
 	void InitDefaultCommand();
 private:
-	Victor pidMotor;
+	Spark pidMotor;
 	Encoder pidEncoder;
 };
 

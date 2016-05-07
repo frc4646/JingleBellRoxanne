@@ -9,20 +9,20 @@
 OI::OI():
 left(0),
 right(1),
-ringer(&left, 6),
-lowspeed(&right, 6),
-medspeed(&right, 11),
-highspeed(&right, 8),
-stopspeed(&right, 9),
-reversespeed(&right, 10)
+ringer(&left, 6)
+//lowspeed(&right, 6),
+//medspeed(&right, 11),
+//highspeed(&right, 8),
+//stopspeed(&right, 9),
+//reversespeed(&right, 10)
 {
 	ringer.WhileHeld(new RingerCommand());
 	// Process operator interface input here.
-	lowspeed.WhenPressed(new LowSpeedCommand());
-	medspeed.WhenPressed(new MedSpeedCommand());
-	highspeed.WhenPressed(new HighSpeedCommand());
-	stopspeed.WhileHeld(new StopSpeed());
-	reversespeed.WhileHeld(new ReverseSpeed());
+//	lowspeed.WhenPressed(new LowSpeedCommand());
+//	medspeed.WhenPressed(new MedSpeedCommand());
+//	highspeed.WhenPressed(new HighSpeedCommand());
+//	stopspeed.WhileHeld(new StopSpeed());
+//	reversespeed.WhileHeld(new ReverseSpeed());
 
 }
 Joystick& OI::GetLeftStick() {
